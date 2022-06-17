@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    --font-family: 'Open Sans', Arial, sans-serif;
+    --text-color: #4d4e53;
+    font-family: var(--font-family);
+}
+
+#aside{
+    min-width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    border-right: solid gray 3px;
+}
+
+#aside h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+#aside ul{
+    list-style-type: none;
+}
+
+#aside li{
+    width: 100%;
+    border-top: black solid 1px;
+}
+
+.nav-link{
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.7em;   
+    padding: 10px 30px;
+}
+
+main{
+    margin-left: 300px;
+    padding: 40px;
+}
+
+.main-section{
+    margin-bottom: 30px;
+}
+
+.main-section header{
+    margin-bottom: 20px;
+}
+
+.main-section h2{
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.main-section p{
+    margin-left: 10px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: var(--text-color);
+    line-height: 1.5em;
+}
+
+.main-section .code{
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 5px;
+    padding: 18px 13px;
+    font-family: monospace;
+    margin-left: 25px;
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+#main-doc ul{
+    list-style-type: none;
+}
+
+#main-doc ul li p::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: gray; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 0.9em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+#main-doc ul li{
+margin-left: 40px; /* Also needed for space (tweak if needed) */
+}
+
+@media (max-width: 840px) {
+    body{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #aside{
+        min-width: 300px;
+        height: 650px;
+        position: relative;
+    }
+
+    main{
+        margin-left: 30px;
+    }
+}
+
+
+

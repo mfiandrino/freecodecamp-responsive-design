@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --cp-font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+}
+
+#header{
+    position: fixed; /*Fijo la barra*/
+    top: 0; /*La posiciono a 0 del borde superior*/
+    width: 100%; /*Hago que ocupe todo el ancho*/
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header-logo{
+    width: 35px;
+    height: auto;
+    margin-left: 2px;
+    margin-right: 4px;
+}
+
+#left-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-family: var(--cp-font-family);
+}
+
+#left-header-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#left-header-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#left-header-links a{
+    text-decoration: none;
+    
+}
+
+#plus-character{
+    font-size: 15px;
+}
+
+#page-description{
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.bold-text{
+    font-weight: 600;
+}
+
+#follow-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 2px;
+    padding: 0px 6px;
+    font-size: 11px;
+    height: 17px;
+}
+
+#freeCodeLink{
+    color: hsl(0, 0%, 65%);
+    font-size: 13px;
+}
+
+#freeCodeLink:hover{
+    color:white;
+}
+
+#nav-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    height: 100%;
+}
+
+#nav-list a{
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    margin: 5px;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-family: var(--cp-font-family);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#nav-list a:hover{
+    background-color: hsl(0, 0%, 45%);
+}
+
+#header .green-background-button{
+    background-color: hsl(120, 58%, 64%);
+    color: black;
+}
+
+#header .green-background-button:hover{
+    background-color: hsl(120, 58%, 40%);
+    color: white;
+}
+
+/*-----------------------MAIN------------------------*/
+
+main{
+    background-image: linear-gradient( 
+115deg
+, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    color: white;
+    font-family: var(--cp-font-family);
+}
+
+#title{
+    padding-top: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 400;
+}
+
+#description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-style: italic;
+}
+
+#survey-form{
+    background-color: rgba(27, 27, 50, 0.8);;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+
+#survey-form > *{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+fieldset{
+    border: 0;
+}
+
+#name,#email,#number,#dropdown,#radios,#dropdown-features,#improv,#comments{
+    margin-top: 5px;
+}
+
+#name,#email,#number,#dropdown,#dropdown-features{
+    padding: 5px;
+    font-size: 15px;
+}
+
+#submit{
+    align-items: center;
+    font-size: 17px;
+    padding: 8px;
+    color: white;
+    background-color: #37af65;
+    font-family: var(--cp-font-family);
+    border: none;
+    border-radius: 2px;
+}
+
+
